@@ -1,40 +1,145 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
         <head>
             <meta charset="utf-8">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-            <link href="css/slider.css" rel="stylesheet">
+            <link href="css/carousel.css" rel="stylesheet">
         </head>
         <body>
+            <header>
+                <nav class="navbar navbar-dark bg-dark justify-content-center">
+                    <h5 class="text-light">ポートフォリオ紹介</h5> 
+                </nav>
+            </header>
             <div class="container">
                 <div class="row my-3">
-                    <div class="col-md-12">
-                        <div class="col-md-12 text-center">
-                            <h4 class="font-weight-bold">ポートフォリオ紹介</h4>
-                        </div>
-                        <div class="col-md-12 text-center">
-                            <div class="cp_cssslider">
-                                <input type="radio" name="cp_switch" id="photo1" checked/>
-                                <label for="photo1">
-                                    <img src="images/blue_sky_rosd.jpg" />
-                                </label>
-                                <img src="images/blue_sky_rosd.jpg" />
-
-                                <input type="radio" name="cp_switch" id="photo2"/>
-                                <label for="photo2">
-                                    <img src="images/gorilla.jpg" />
-                                </label>
-                                <img src="images/gorilla.jpg" />
-
-                                <input type="radio" name="cp_switch" id="photo3"/>
-                                <label for="photo3">
-                                    <img src="images/lucky_guy.jpg" />
-                                </label>
-                                <img src="images/lucky_guy.jpg" />
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div class="col-md-10">
+                            <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item text-center active text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot1.png" width="950" height="540">
+                                        ログイン
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot2.png" width="950" height="540">
+                                        トップページ
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot3.png" width="950" height="540">
+                                        タイトル検索
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot9.png" width="950" height="540">
+                                        人物検索
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot4.png" width="950" height="540">
+                                        映画詳細
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot5.png" width="950" height="540">
+                                        レビュー詳細
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot6.png" width="950" height="540">
+                                        レビュー作成
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot7.png" width="950" height="540">
+                                        デイリーランキング
+                                    </div>
+                                    <div class="carousel-item text-center text-secondary">
+                                        <img class="img-fluid" src="images/app_screenshot8.png" width="950" height="540">
+                                        ユーザページ
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                                </ol>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
-                        </div>
+                            <div>
+                                <div class="d-flex mb-2">
+                                    <div class="px-2 bg-info"></div>
+                                    <h4 class="font-weight-bold text-dark">　概要</h4>
+                                </div>
+                                <div class="mb-4">
+                                    映画のレビューを投稿し、それに対するコメントやいいねができる映画評論アプリです。映画の情報を提供するTMDb APIのデータを利用しており、映画のあらすじや出演俳優、公開日などの情報を検索することができます。
+                                </div>
+
+                                <div class="d-flex mb-2">
+                                    <div class="px-2 bg-info"></div>
+                                    <h4 class="font-weight-bold text-dark">　機能</h4>
+                                </div>
+                                <div class="mb-4">
+                                    ■ユーザ関連機能<br>
+                                    ・アカウント作成、編集<br>
+                                    ・ログイン・ログアウト<br>
+                                    ・メールアドレス変更<br><br>
+
+                                    ■メイン機能<br>
+                                    ・映画検索、詳細表示(TMDB APIからの映画データの受け取り)<br>
+                                    ・映画データDBへの保存<br>
+                                    ・レビュー投稿、編集、削除<br>
+                                    ・レビューに対するコメント投稿、削除<br>
+                                    ・レビューに対するいいね<br>
+                                    ・レビューの閲覧数ランキング<br>
+                                    ・レビューのソート
+                                </div>
+
+                                <div class="d-flex mb-2">
+                                    <div class="px-2 bg-info"></div>
+                                    <h4 class="font-weight-bold text-dark">　技術要素</h4>
+                                </div>
+                                <div class="mb-4">
+                                    ・開発環境：docker-compose, Bashシェルスクリプト<br>
+                                    ・本番環境：Heroku<br>
+                                    ・CI/CDツール：CircleCI<br>
+                                    ・言語：PHP7.3<br>
+                                    ・フレームワーク：Laravel5.8<br>
+                                    ・データベース：MySQL5.7, Redis<br>
+                                    ・データベースGUI管理ツール：phpMyAdmin<br>
+                                    ・ファイルストレージ：S3<br>
+                                    ・フロントエンド：Laravel, Vue.js, Bootstrap<br>
+                                    ・外部API：Facebookログイン, Googleログイン, TMDb<br>
+                                    ・HTTPクライアント：Guzzle<br><br>
+
+                                    ■Laravel<br>
+                                    ・DBリレーション<br>
+                                    ・DBトランザクション<br>
+                                    ・ソーシャルログイン：Socialite<br>
+                                    ・機能テスト：PHPunit<br>
+                                    &emsp;- テストデータ生成：Seeder, Factory, UploadedFile<br>
+                                    &emsp;- モック作成：Mockery<br>
+                                    ・バリデーション：Validator<br>
+                                    ・ページネーション<br>
+                                    ・閲覧数ランキング<br>
+                                    &emsp;- キャッシュ管理・操作：Redis<br>
+                                    ・外部APIへのHTTPリクエスト：Guzzle
+                                </div>
+                            </div>  
+                        </div>    
                     </div>
                 </div>
             </div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         </body>
     </html>
