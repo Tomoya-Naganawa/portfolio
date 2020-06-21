@@ -74,67 +74,74 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
-                            <div>
-                                <div class="d-flex mb-4">
-                                    <h5 class="text-dark">アプリ名：Movie salon</h5>
-                                </div>
-                                <div class="d-flex mb-2">
-                                    <div class="px-2 bg-info"></div>
-                                    <h4 class="font-weight-bold text-dark">　概要</h4>
-                                </div>
-                                <div class="mb-4">
-                                    Movie salonは映画のレビューを投稿し、それに対するコメントやいいねができる映画評論アプリです。映画の情報を提供するTMDb APIのデータを利用しており、映画のあらすじや出演俳優、公開日などの情報を検索することができます。
-                                </div>
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <div class="col-md-9">
+                                    <div class="d-flex mb-2">
+                                        <div class="px-2 bg-info"></div>
+                                        <h5 class="font-weight-bold text-dark mb-0">　概要</h5>
+                                    </div>
+                                    <div class="mb-4">
+                                        アプリ名：Movie salon<br>
+                                        URL：<a href="https://www.moviesalon.site">https://www.moviesalon.site</a><br>
+                                        GitHub：<a href="https://github.com/Tomoya-Naganawa/movie_salon">https://github.com/Tomoya-Naganawa/movie_salon</a><br>
+                                        アプリの説明：<br>
+                                        Movie salonは映画のレビューを投稿し、それに対するコメントやいいねができる映画評論アプリです。映画の情報を提供するTMDb APIのデータを利用しており、映画のあらすじや出演俳優、公開日などの情報を検索することができます。
+                                    </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="px-2 bg-info"></div>
+                                        <h5 class="font-weight-bold text-dark mb-0">　機能</h5>
+                                    </div>
+                                    <div class="mb-4">
+                                        ■ユーザ関連機能<br>
+                                        ・アカウント作成、編集<br>
+                                        ・ログイン・ログアウト<br>
+                                        ・メールアドレス変更<br><br>
 
-                                <div class="d-flex mb-2">
-                                    <div class="px-2 bg-info"></div>
-                                    <h4 class="font-weight-bold text-dark">　機能</h4>
-                                </div>
-                                <div class="mb-4">
-                                    ■ユーザ関連機能<br>
-                                    ・アカウント作成、編集<br>
-                                    ・ログイン・ログアウト<br>
-                                    ・メールアドレス変更<br><br>
+                                        ■メイン機能<br>
+                                        ・映画検索、詳細表示(TMDB APIからの映画データの受け取り)<br>
+                                        ・映画データDBへの保存<br>
+                                        ・映画の評価の集計<br>
+                                        ・レビュー投稿、編集、削除<br>
+                                        ・レビューに対するコメント投稿、削除<br>
+                                        ・レビューに対するいいね登録、解除<br>
+                                        ・レビューの閲覧数ランキング<br>
+                                        ・レビューのソート
+                                    </div>
 
-                                    ■メイン機能<br>
-                                    ・映画検索、詳細表示(TMDB APIからの映画データの受け取り)<br>
-                                    ・映画データDBへの保存<br>
-                                    ・レビュー投稿、編集、削除<br>
-                                    ・レビューに対するコメント投稿、削除<br>
-                                    ・レビューに対するいいね<br>
-                                    ・レビューの閲覧数ランキング<br>
-                                    ・レビューのソート
-                                </div>
+                                    <div class="d-flex mb-2">
+                                        <div class="px-2 bg-info"></div>
+                                        <h5 class="font-weight-bold text-dark mb-0">　技術要素</h5>
+                                    </div>
+                                    <div class="mb-4">
+                                        ・開発環境：Dockerコンテナ<br>
+                                        &emsp;- コンテナ管理：docker-compose + Bashシェルスクリプト<br>
+                                        &emsp;- webサーバ：Nginx + PHP-FPM<br>
+                                        &emsp;- DBサーバ：MySQL, Redis<br>
+                                        ・本番環境：Heroku<br>
+                                        ・CI/CDツール：CircleCI<br>
+                                        ・言語：PHP7.3<br>
+                                        ・フレームワーク：Laravel5.8<br>
+                                        ・データベース：MySQL5.7, Redis<br>
+                                        ・データベースGUI管理ツール：phpMyAdmin<br>
+                                        ・ファイルストレージ：AWS S3<br>
+                                        ・フロントエンド：Laravel, Vue.js, Bootstrap<br>
+                                        ・外部API：Facebookログイン, Googleログイン, TMDb<br>
+                                        ・HTTPクライアント：Guzzle<br><br>
 
-                                <div class="d-flex mb-2">
-                                    <div class="px-2 bg-info"></div>
-                                    <h4 class="font-weight-bold text-dark">　技術要素</h4>
-                                </div>
-                                <div class="mb-4">
-                                    ・開発環境：docker-compose, Bashシェルスクリプト<br>
-                                    ・本番環境：Heroku<br>
-                                    ・CI/CDツール：CircleCI<br>
-                                    ・言語：PHP7.3<br>
-                                    ・フレームワーク：Laravel5.8<br>
-                                    ・データベース：MySQL5.7, Redis<br>
-                                    ・データベースGUI管理ツール：phpMyAdmin<br>
-                                    ・ファイルストレージ：S3<br>
-                                    ・フロントエンド：Laravel, Vue.js, Bootstrap<br>
-                                    ・外部API：Facebookログイン, Googleログイン, TMDb<br>
-                                    ・HTTPクライアント：Guzzle<br><br>
-
-                                    ■Laravel<br>
-                                    ・DBリレーション<br>
-                                    ・DBトランザクション<br>
-                                    ・ソーシャルログイン：Socialite<br>
-                                    ・機能テスト：PHPunit<br>
-                                    &emsp;- テストデータ生成：Seeder, Factory, UploadedFile<br>
-                                    &emsp;- モック作成：Mockery<br>
-                                    ・バリデーション：Validator<br>
-                                    ・ページネーション<br>
-                                    ・閲覧数ランキング<br>
-                                    &emsp;- キャッシュ管理・操作：Redis<br>
-                                    ・外部APIへのHTTPリクエスト：Guzzle
+                                        ■Laravel<br>
+                                        ・DBリレーション<br>
+                                        ・DBトランザクション<br>
+                                        ・ページネーション<br>
+                                        ・バリデーション：Validator<br>
+                                        ・ソーシャルログイン：Socialite<br>
+                                        ・閲覧数ランキング<br>
+                                        &emsp;- キャッシュ管理・操作：Redis<br>
+                                        ・機能テスト：PHPunit<br>
+                                        &emsp;- テストデータ生成：Seeder, Factory, UploadedFile, dataProvider<br>
+                                        &emsp;- モック作成：Mockery<br>
+                                        ・S3連携：flysystem-aws-s3-v3<br>
+                                        ・外部APIへのHTTPリクエスト：Guzzle
+                                    </div>
                                 </div>
                             </div>  
                         </div>    
