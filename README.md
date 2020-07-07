@@ -1,6 +1,6 @@
 # portfolio
 Movie salonはTMDb APIのデータを利用した、映画のレビューアプリです。<br>
-![aaaa](https://github.com/Tomoya-Naganawa/portfolio/blob/images/app_welcome_page.png)<br><br>
+![aaaa](https://github.com/Tomoya-Naganawa/portfolio/blob/images/app_screenshot1.png)<br><br>
 ![aaaa](https://github.com/Tomoya-Naganawa/portfolio/blob/images/app_screenshots.jpg)<br><br>
 
 # 機能
